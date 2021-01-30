@@ -1,0 +1,311 @@
+ <!DOCTYPE html>
+<html>
+ <head>  
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">        
+      <link rel = "stylesheet"  
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">  
+      <link rel = "stylesheet"  
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  
+      <script type = "text/javascript"  
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>             
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> 
+      </script>   
+  </head>  
+
+  <body>
+
+    <div class="card-panel blue-grey darken-1" id="card"> <h3 id= "top" style="color:white" >GopheResearch Application Form</div> 
+    
+<div class="container">    
+  <div class="card-panel" > 
+
+      <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="firstName" type="text" class="validate">
+              <label for="firstName">First Name</label>
+            </div>
+
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="lastName" type="text" class="validate">
+              <label for="lastName">Last Name</label>
+            </div>
+      </div>   
+                        
+      <div class="row">   
+              <form>
+                  <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="studentEmailAddress" type="email" class="validate">
+                  <label for="studentEmailAddress">Student Email Address</label>
+                </div>
+              </form>  
+
+              <form>
+                  <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="piEmail" type="email" class="validate">
+                  <label for="piEmail">PI Email</label>
+                </div>
+              </form>
+          </div>  
+
+      <div class="row">   
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i> <!-- MAKE DROPDOWN -->
+              <select id="college">
+                <option value="1">CBS</option>
+                <option value="2">CEHD</option>
+                <option value="3">CLA</option>
+                <option value="4">CSE</option>
+                <option value="5">CSE</option>
+                <option value="6">School of Nursing</option>
+                <option value="7">Medical School</option>
+                <option value="8">Carlson School of Management</option>
+                <option value="9">CFANS</option>
+                <option value="10">Not listed</option>
+              </select>
+              <label >College</label>
+            </div>
+
+            <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i> <!-- MAKE DROPDOWN -->
+              <select id="academicYear">
+                <option value="1">Freshman</option>
+                <option value="2">Sophomore</option>
+                <option value="3">Junior</option>
+                <option value="3">Senior</option>
+              </select>
+              <label >Academic Year</label>
+            </div>
+            
+        </div>
+
+      <div class="row">   
+
+            
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i> <!-- MAKE DROPDOWN -->
+              <input id="academicMajor" type="text" class="validate">
+              <label for="academicMajor">Academic Major</label>
+            </div>
+
+
+                    <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i> 
+              <input id="minor" type="text" class="validate">
+              <label for="minor">Minor(s)</label>
+            </div>
+    
+           
+          
+      </div>
+
+    </div>
+
+    <div class="card-panel">
+      <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea id="TellMeAboutYourself" class="materialize-textarea"></textarea>
+            <label for="TellMeAboutYourself">Tell me about yourself</label>
+          </div>
+
+          <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea id="interested" class="materialize-textarea"></textarea>
+            <label for="interested">Why are you interested in working with my lab?</label>
+            <span class="helper-text" data-error="wrong" data-success="right">*Tip - Make this personalized to show you have done your homework! Professors will be impressed by your curiosity and the time you’ve taken to investigate their work.
+  </span>
+          </div>
+
+          <div class="input-field col s12">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="gain" class="materialize-textarea"></textarea>
+              <label for="gain">What would you like to gain from working in the lab?</label>
+            </div>
+
+          <div class="input-field col s12">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="goals-interests" class="materialize-textarea"></textarea>
+              <label for="goals-interests">Describe your future career goals and/or project interests</label>
+            </div>
+
+          <div class="input-field col s12">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="experience" class="materialize-textarea"></textarea>
+              <label for="experience">Relevant Experience and Coursework</label>
+            </div>
+
+          <div class="input-field col s12">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="addInformation" class="materialize-textarea"></textarea>
+              <label for="addInformation">Additional Information</label>
+              <span class="helper-text" data-error="wrong" data-success="right">Have anything else to share?</span>
+            </div>
+      </div>
+    </div>
+
+    <div class="card-panel">
+      <div class="row">
+        <form action="#">
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>File</span>
+          <input type="file" multiple>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text" placeholder="Upload one or more files">
+        </div>
+      </div>
+    </form>
+      </div>
+    </div>  
+
+    <div class="center">
+        <button id = "btn" class="btn waves-effect waves-light btn-large" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+
+    </div>
+    
+    <br>
+</div>
+
+  <footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2021 GopheResearch
+            <a class="grey-text text-lighten-4 right" href="#!">More Links </a>
+          </div>              
+  </footer>
+            
+
+  
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems,  {accordion: false});
+  });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, options);  // accordi... false //
+  });
+
+  bruteEmail();
+
+  bruteUser();
+
+  //M.toast({html: 'Good Luck With Your Application! '});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems, options);
+  });
+
+
+function bruteEmail(){
+google.script.run
+          .withSuccessHandler(updateField)
+          .display();
+}
+
+function updateField(output) {
+        document.getElementById("detail").innerHTML =  output;
+        
+        //document.getElementById("card").className  = "card-panel light-green accent-3" ;
+        //document.getElementById("top").innerHTML = "Success!" ;
+        //document.getElementById("top").style.color  = "navy" ;
+        //document.getElementById("card2").className  = "card light-green accent-3" ;
+        //document.getElementById("card2").style.display = 'block';
+
+
+
+
+//<h3 id= "top" style="color:navy;">Success!</h3>
+  }
+
+  //-User--//
+
+
+function bruteUser(){
+google.script.run
+          .withSuccessHandler(updateUser)
+          .displayUser();
+}
+
+function updateUser(output) {
+        document.getElementById("user").innerHTML =  output;
+  }
+
+   $(document).ready(function() {
+    M.updateTextFields();
+  });
+
+</script>
+
+  <style>
+  
+.st2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.approved {
+text-align: center;
+}
+
+.page-footer {
+  padding-top: 0px;
+  color: #e8eaf6;
+  background-color: blue-grey;
+
+}
+
+      .wrapper {
+    text-align: center;
+      position: absolute;
+    left:50%;
+  }
+    .button {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+
+.bodytest{
+className: container;
+}
+        
+}
+h3 {text-align: center; }
+p {text-align: center;}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+
+
+    </style>  
+
+
+
+
+
+
+
+
+</html>
+
+
+
+   
