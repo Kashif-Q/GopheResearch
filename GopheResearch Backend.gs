@@ -381,5 +381,4 @@ function setFolderViewers(folderName, emailsArray) {
   var folder = DriveApp.getFolderById(getIdFromName(folderName));
   folder.addViewers(emailsArray)
 }
-//File Upload Credit: https://stackoverflow.com/questions/31126181/uploading-multiple-files-to-google-drive-with-google-app-script //
 
